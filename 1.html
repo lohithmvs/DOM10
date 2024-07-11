@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,3];
+        let[val1,val2,vla3]=arr;
+        console.log(val1);
+        document.write(`<h1>${val2}</h1>`)
+        val1=2;
+        document.write(`<h1>${val1}</h1>`)
+        document.write(`<p>${arr}</p>`);
+        var[first,,third]=arr;
+        document.write(`<h1>${third}</h1>`)
+        let obj1={name:"hello",city:"las vegas"};
+        let{name:greeting,city}=obj1;
+        console.log(greeting);
+        let{name,...a}=obj1;
+        console.log(a);
+    </script>
+</body>
+</html>
